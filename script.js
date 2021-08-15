@@ -123,3 +123,14 @@ function checkSign(num){
     return num > 0? "positive": num<0 ?"negative" :"zero";
 }
 console.log(checkSign(-3));
+
+// Freeze constant objects
+function freezeObj(){
+    "use strict";
+    const Math_Constant ={
+        pi: 3.14  
+    };
+
+    object.freeze(Math_Constant);
+
+}
