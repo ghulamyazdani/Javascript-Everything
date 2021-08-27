@@ -158,3 +158,13 @@ function add(a,b){
     return a + b;
 }
 console.log(add(2,4))
+function check(name) {
+    switch (name) {
+        case Ghulam:console.log("Yes")
+            
+            break;
+    
+        default:
+            break;
+    }
+}
