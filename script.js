@@ -150,13 +150,6 @@ const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
 
 // dosr function
-const sum = sfunction() 
-return function sum(x,y,z){
-const arguments = arguments.
-}
-function add(a,b){
-    return a + b;
-}
 console.log(add(2,4))
 function check(name) {
     switch (name) {
@@ -168,3 +161,8 @@ function check(name) {
             break;
     }
 }
+const lastName = "Yazdani"
+const sentence = "Hello" + " "+ lastName + "!How are you?";
+const sentenceWithTemplate = `Hello ${lastName} How are you?`
+console.log(sentence);
+console.log(sentenceWithTemplate);
