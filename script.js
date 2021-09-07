@@ -172,5 +172,6 @@ console.log(sentence.toUpperCase());
 
 const button = document.querySelector('.button');
 button.addEventListener('click',function(){
+    console.log("Yes");
     alert("Hello");
 })
