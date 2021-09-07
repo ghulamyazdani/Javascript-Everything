@@ -163,6 +163,14 @@ function check(name) {
 }
 const lastName = "Yazdani"
 const sentence = "Hello" + " "+ lastName + "!How are you?";
-const sentenceWithTemplate = `Hello ${lastName} How are you?`
+const sentenceWithTemplate = "Hello ${lastName} How are you?"
 console.log(sentence);
 console.log(sentenceWithTemplate);
+
+// 
+console.log(sentence.toUpperCase());
+
+const button = document.querySelector('.button');
+button.addEventListener('click',function(){
+    alert("Hello");
+})
