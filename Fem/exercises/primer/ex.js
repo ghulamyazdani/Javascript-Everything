@@ -7,6 +7,12 @@ function addFavoriteBook(bookName) {
 }
 
 // TODO: define printFavoriteBooks() function 
+function printFavoriteBooks() {
+    console.log(`favoriteBooks:${favoriteBooks.length}`);
+    for (let bookName of favoriteBooks){
+        console.log(bookName);
+    }
+}
 
 
 var favoriteBooks = [];
