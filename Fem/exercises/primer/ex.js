@@ -25,5 +25,4 @@ function printFavoriteBooks() {
 
 
 // TODO: print out favorite books
-
-}
+ //== allows coersion to happen on on the other hand === dont allow coersion
