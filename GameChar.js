@@ -56,3 +56,106 @@ for (var i = 0; i < suspects.length; i++) {
 _.each(suspects, function(name){
     suspectsList.push(createSuspectObject(name));
 })
+
+
+const weapons = ['candlestick', 'dagger', 'lead pipe', 'revolver', 'rope'];
+const makeBroken = function(item){ return `broken ${item}`}
+_.map(weapons, makeBroken);
+
+var suspects = ['Miss scarlet', 'Colonel Mustard', 'Mrs. White', 'Mr. Green'];
+
+var suspectList = _.map(suspects, function(item){
+    return createSuspectObject(item);
+    });
+
+
+_.each(list, function(value,index,list){
+    storage.push(value,index,list);
+})
+
+
+const videoData = [
+    {
+        name: 'Miss Scarlet',
+        present: true,
+        rooms: [
+            {kitchen: false},
+            {ballroom: false},
+            {conservatory: false},
+            {'dining room': false},
+            {'billiard room': false},
+            {library: false}
+        ]
+    },
+    {
+        name: 'Mrs. White',
+        present: false,
+        rooms: [
+            {kitchen: false},
+            {ballroom: false},
+            {conservatory: false},
+            {'dining room': false},
+            {'billiard room': false},
+            {library: false}
+        ]
+    },
+    {
+        name: 'Reverend Green',
+        present: true,
+        rooms: [
+            {kitchen: false},
+            {ballroom: false},
+            {conservatory: false},
+            {'dining room': false},
+            {'billiard room': false},
+            {library: false}
+        ]
+    },
+    {
+        name: 'Rusty',
+        present: false,
+        rooms: [
+            {kitchen: false},
+            {ballroom: false},
+            {conservatory: false},
+            {'dining room': false},
+            {'billiard room': false},
+            {library: false}
+        ]
+    },
+    {
+        name: 'Colonel Mustard',
+        present: true,
+        rooms: [
+            {kitchen: false},
+            {ballroom: false},
+            {conservatory: false},
+            {'dining room': false},
+            {'billiard room': false},
+            {library: false}
+        ]
+    },
+    {
+        name: 'Professor Plum',
+        present: true,
+        rooms: [
+            {kitchen: false},
+            {ballroom: false},
+            {conservatory: false},
+            {'dining room': false},
+            {'billiard room': false},
+            {library: false}
+        ]
+    }
+];
+
+
+_.filter = function(videoData){
+    var presentList = [];
+    for (var i = 0; i < videoData.length; i++) {
+        if(videoData[i].present){
+            presentList.push(videoData[i]);
+        }
+    }
+    return presentList;
+}
