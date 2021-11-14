@@ -159,3 +159,16 @@ _.filter = function(videoData){
     }
     return presentList;
 }
+
+_.filter = function(videoData){
+    var NamesList = [];
+    _.map(videoData, function(item){
+        if(item.present){
+            NamesList.push(item.name);
+        }
+    });
+};
+
+// default paramerters
+var add = (a,b=5) =>console.log(a+b);
+add(3);
