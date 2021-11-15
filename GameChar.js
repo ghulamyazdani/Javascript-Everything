@@ -228,10 +228,21 @@ const newDevelopment = [
 _.each(newDevelopment, function(item){
     _.each(item.rooms, function(room){
         if(room){
-            
+
 
 
     if(item.rooms.conservatory){
         console.log(item.name);
     }
+}
 });
+
+
+const myAlert = () => {
+    const x = "Help I think i found a clue"
+    const alerter = () => {
+        alert(x);
+    }
+    setTimeout(alerter, 3000);
+     console.log('what ??')
+};
