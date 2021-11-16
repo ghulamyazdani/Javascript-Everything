@@ -12,10 +12,9 @@ const hours = Math.floor((newYearDate - currentDate) / (1000 * 60 * 60)%24);
 const minutes = Math.floor((newYearDate - currentDate) / (1000 * 60)%60);
 const seconds = Math.floor((newYearDate - currentDate) / 1000%60);
 daysEm.innerHTML = days;
-hoursEm.innerHTML = hours;
-minutes.innerHTML = timeFormat(minutes);
+hoursEm.innerHTML = timeFormat(hours);
+minutesEm.innerHTML = timeFormat(minutes);
 secondEm.innerHTML = timeFormat(seconds);
-console.log(days, hours, minutes,seconds);
 }
 const timeFormat = (time) => {return time<10 ?`0${time}`: time;};
 countDates();
