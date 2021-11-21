@@ -48,10 +48,11 @@ const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 const nextBtn = document.getElementById("next");
 const selected = document.getElementById("input[radio]:checked");
+let answersEls = document.querySelectorAll(".answer");
 const quiz = document.getElementById("quiz");
 let currentQuestion = 0;
 let score = 0;
-let answersEls = document.querySelectorAll(".answer");
+
 loadQuiz();
 function loadQuiz() {
   const currentQuizData = quizData[currentQuestion];
@@ -60,6 +61,7 @@ function loadQuiz() {
   b_text.innerHTML = currentQuizData.b;
   c_text.innerHTML = currentQuizData.c;
   d_text.innerHTML = currentQuizData.d;
+  console.log(answersEls);
 }
 
 
@@ -82,7 +84,7 @@ submitBtn.addEventListener("click", () => {
     currentQuestion++;
     deselectAnswers();
   }
-  if (currentQuestion < quizData.length - 1) {
+  if (currentQuestion < quizData.length) {
     loadQuiz();
   } else {
       quiz.innerHTML = `<h2>You scored ${score} out of ${quizData.length}</h2>
