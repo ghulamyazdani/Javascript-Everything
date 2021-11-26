@@ -171,6 +171,7 @@ function showMealInfo(mealData) {
         } else {
             break;
         }
+
     }
 
     mealEl.innerHTML = `
