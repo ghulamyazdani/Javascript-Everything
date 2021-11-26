@@ -136,7 +136,7 @@ header button{
     color: #17C3B2;
 }
 
-.meal-info-container{
+.popup-container{
     position:fixed;
     top:0;
     left:0;
@@ -146,12 +146,30 @@ header button{
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.5);
+    
 }
-.meal-info{
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.popup{
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
+    padding: 0 2rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: auto;
+    height: 100%;
+}
+.popup h1{
+    text-align: center;
+}
+.popup .close-popup{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
 }
