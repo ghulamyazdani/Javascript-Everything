@@ -37,7 +37,6 @@ textArea.addEventListener("input", (e) => {
     const { value } = e.target;
 
     main.innerHTML = marked(value);
-    console.log(marked(value));
 updateLs();
 });
 deleteBtn.addEventListener("click", () => {
@@ -53,6 +52,7 @@ function updateLs() {
     notesText.forEach(note => {
         
         notes.push(note.value);
+        console.log(note.vakue);
     });
     localStorage.setItem("notes", JSON.stringify(notes));
 }

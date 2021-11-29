@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: #333;
+    background-color: #C5E6A6;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 25%;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left: 38.5%;
+    margin-top:5rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+}
+.container button i{
+    font-size:1.3rem;
+}
+.container .textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.container button {
+    border: none;
+    background-image: #9899A6;
+    padding: 1rem;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ 
+
+    
+}
+ul li{
+    list-style: none;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 24%;
+    height: 3rem;
+    margin-top:2rem; 
+    display: flex;
+    overflow: hidden;
+    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+ul li span{
+    width: 90%;
+    padding: 0.4rem;
+    overflow: hidden;
+}
+ul li button{
+
+    border: none;
+    background-image: #9899A6;
+    padding: 1rem;
+    cursor: pointer;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+ul li:hover > button:hover + button{
+    display: block;
+   
+    
+}
