@@ -73,6 +73,10 @@ ul li span{
     width: 90%;
     padding: 0.4rem;
     overflow: hidden;
+    cursor: pointer;
+}
+.strike{
+    text-decoration: line-through;
 }
 ul li button{
 
