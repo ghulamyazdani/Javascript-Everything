@@ -17,6 +17,7 @@ background-color: #577BC1;
 display:flex;
 justify-content: flex-end;
 padding: 1.5rem;
+position:sticky;
 }
 .container input{
     padding:0.7rem;
@@ -43,6 +44,7 @@ padding: 1.5rem;
     overflow: hidden;
     margin: 2.7rem;
     font-family: inherit;
+    position: relative;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .movie img{
@@ -83,3 +85,38 @@ padding: 1.5rem;
 .yellow{
     background-color: yellow;
 }
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+h4{
+    margin-top: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000000;
+  }
+  main{
+      margin-top: 3.5rem;
+  }

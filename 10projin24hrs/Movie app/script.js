@@ -25,14 +25,18 @@ function showMovies(Data) {
   Data.forEach((movie) => {
     const movieEl = document.createElement("div");
   
-    const { poster_path, title, vote_average } = movie;
+    const { poster_path, title, vote_average,overview } = movie;
     movieEl.classList.add("movie");
     movieEl.innerHTML = `
-            <img src="${poster_path?IMGPATH + poster_path:IMGPATH+"ckL8dcFg2UAvLGqtNReWdobn6yd.jpg"}" alt="">
+            <img src="${poster_path!=null?IMGPATH + poster_path:IMGPATH+"ckL8dcFg2UAvLGqtNReWdobn6yd.jpg"}" alt="">
             <div class="movie-info">
                 <h3>${title}</h3>
                 <span class="${getClass(vote_average)}">${vote_average}</span>
-            </div>`;
+            </div>
+            <div class="overview">
+            <h4>overview:</h4>
+            ${overview}</div>`;
+            
     main.appendChild(movieEl);
   });
 }
@@ -56,3 +60,16 @@ if(searchTerm){
 }
 
 })
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector(".container");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
